@@ -76,8 +76,9 @@ const Skills: React.FC = () => {
           <div className={`space-y-8 transition-all duration-1000 delay-500 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'}`}>
             <div className="bg-gray-900/50 p-8 rounded-2xl border border-gray-800 hover:border-green-400/30 transition-all duration-300">
               <h3 className="text-2xl font-bold text-white mb-4">Frontend</h3>
-              <div className="flex flex-wrap gap-3">
-                {['React', 'Vue.js', 'Angular', 'Svelte', 'Tailwind CSS', 'SCSS'].map((tech) => (
+              <a href="#">
+              <div className="flex flex-wrap gap-3"> 
+                {['React', 'Vue.js', 'Angular', 'Svelte', 'Tailwind CSS', 'SCSS'].map((tech) => ( 
                   <span
                     key={tech}
                     className="px-4 py-2 bg-gradient-to-r from-green-400/20 to-blue-400/20 text-green-400 rounded-full text-sm border border-green-400/30 hover:border-green-400 transition-all duration-300 hover:scale-105"
@@ -86,10 +87,12 @@ const Skills: React.FC = () => {
                   </span>
                 ))}
               </div>
+              </a>
             </div>
 
             <div className="bg-gray-900/50 p-8 rounded-2xl border border-gray-800 hover:border-blue-400/30 transition-all duration-300">
               <h3 className="text-2xl font-bold text-white mb-4">Backend</h3>
+              <a href="#">
               <div className="flex flex-wrap gap-3">
                 {['Node.js', 'PHP', 'PostgreSQL', 'MongoDB', 'Redis', 'GraphQL'].map((tech) => (
                   <span
@@ -100,10 +103,12 @@ const Skills: React.FC = () => {
                   </span>
                 ))}
               </div>
+              </a>
             </div>
 
             <div className="bg-gray-900/50 p-8 rounded-2xl border border-gray-800 hover:border-pink-400/30 transition-all duration-300">
               <h3 className="text-2xl font-bold text-white mb-4">Tools & DevOps</h3>
+              <a href="">
               <div className="flex flex-wrap gap-3">
                 {['Docker', 'Kubernetes', 'AWS', 'Vercel', 'GitHub Actions', 'Figma'].map((tech) => (
                   <span
@@ -114,6 +119,7 @@ const Skills: React.FC = () => {
                   </span>
                 ))}
               </div>
+              </a>
             </div>
           </div>
         </div>
