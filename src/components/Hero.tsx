@@ -37,13 +37,13 @@ const Hero: React.FC = () => {
 
           <div className={`flex justify-center space-x-6 mb-12 transition-all duration-2000 delay-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
             <a
-              href="#"
+              href="https://github.com/Nibras345"
               className="p-3 bg-gradient-to-r from-green-400/20 to-blue-400/20 rounded-full border border-green-400/30 hover:border-green-400 transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-green-400/25"
             >
               <Github size={24} className="text-green-400" />
             </a>
             <a
-              href="#"
+              href="https://www.linkedin.com/in/nibras-siddiqi-113976296/"
               className="p-3 bg-gradient-to-r from-blue-400/20 to-pink-400/20 rounded-full border border-blue-400/30 hover:border-blue-400 transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-blue-400/25"
             >
               <Linkedin size={24} className="text-blue-400" />
