@@ -36,7 +36,7 @@ const About: React.FC = () => {
           <div className={`transition-all duration-1000 delay-300 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'}`}>
             <div className="relative">
               <div className="w-80 h-80 mx-auto bg-gradient-to-br from-green-400/20 to-blue-400/20 rounded-full flex items-center justify-center border border-green-400/30 overflow-hidden">
-                <img
+                <img 
                   src="src/assets/IMG-20250723-WA0004.jpg"
                   alt="Profile"
                   className="w-72 h-72 object-cover rounded-full border border-gray-700"
@@ -66,23 +66,29 @@ const About: React.FC = () => {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="bg-gray-800/50 p-6 rounded-xl border border-gray-700 hover:border-green-400/50 transition-all duration-300 hover:scale-105">
-                <Code className="text-green-400 mb-4" size={32} />
-                <h4 className="text-white font-semibold mb-2">Clean Code</h4>
-                <p className="text-gray-400 text-sm">Writing maintainable, scalable code</p>
-              </div>
-              
-              <div className="bg-gray-800/50 p-6 rounded-xl border border-gray-700 hover:border-blue-400/50 transition-all duration-300 hover:scale-105">
-                <Palette className="text-blue-400 mb-4" size={32} />
-                <h4 className="text-white font-semibold mb-2">Design Focus</h4>
-                <p className="text-gray-400 text-sm">Creating beautiful user interfaces</p>
-              </div>
-              
-              <div className="bg-gray-800/50 p-6 rounded-xl border border-gray-700 hover:border-pink-400/50 transition-all duration-300 hover:scale-105">
-                <Zap className="text-pink-400 mb-4" size={32} />
-                <h4 className="text-white font-semibold mb-2">Performance</h4>
-                <p className="text-gray-400 text-sm">Optimizing for speed and efficiency</p>
-              </div>
+              <a href="#">
+                <div className="bg-gray-800/50 p-6 rounded-xl border border-gray-700 hover:border-green-400/50 transition-all duration-300 hover:scale-105">
+                  <Code className="text-green-400 mb-4" size={32} />
+                  <h4 className="text-white font-semibold mb-2">Clean Code</h4>
+                  <p className="text-gray-400 text-sm">Writing maintainable, scalable code</p>
+                </div>
+              </a>
+
+              <a href="#">
+                <div className="bg-gray-800/50 p-6 rounded-xl border border-gray-700 hover:border-blue-400/50 transition-all duration-300 hover:scale-105">
+                  <Palette className="text-blue-400 mb-4" size={32} />
+                  <h4 className="text-white font-semibold mb-2">Design Focus</h4>
+                  <p className="text-gray-400 text-sm">Creating beautiful user interfaces</p>
+                </div>
+              </a>
+
+              <a href="#">
+                <div className="bg-gray-800/50 p-6 rounded-xl border border-gray-700 hover:border-pink-400/50 transition-all duration-300 hover:scale-105">
+                  <Zap className="text-pink-400 mb-4" size={32} />
+                  <h4 className="text-white font-semibold mb-2">Performance</h4>
+                  <p className="text-gray-400 text-sm">Optimizing for speed and efficiency</p>
+                </div>
+              </a>
             </div>
           </div>
         </div>
